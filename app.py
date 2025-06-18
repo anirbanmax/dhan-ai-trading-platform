@@ -348,9 +348,9 @@ class DhanAITradingApp:
             st.session_state.selected_index = selected_index
         
         with col2:
-            if st.button("🔄 Refresh Data", use_container_width=True):
-                st.session_state.last_refresh = datetime.now()
-                st.experimental_rerun()
+           if st.button("🔄 Refresh Data", use_container_width=True):
+            st.session_state.last_refresh = datetime.now()
+            st.rerun()
         
         with col3:
             auto_refresh = st.checkbox("Auto Refresh", value=False)
@@ -358,9 +358,9 @@ class DhanAITradingApp:
         # Auto refresh every 30 seconds if enabled
         if auto_refresh:
             time.sleep(1)
-            if (datetime.now() - st.session_state.last_refresh).seconds >= 30:
-                st.session_state.last_refresh = datetime.now()
-                st.experimental_rerun()
+        if (datetime.now() - st.session_state.last_refresh).seconds >= 30:
+        st.session_state.last_refresh = datetime.now()
+        st.rerun()
         
         # Navigation
         col1, col2, col3, col4, col5 = st.columns(5)
