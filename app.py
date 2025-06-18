@@ -356,11 +356,12 @@ class DhanAITradingApp:
             auto_refresh = st.checkbox("Auto Refresh", value=False)
         
         # Auto refresh every 30 seconds if enabled
+        # Auto refresh every 30 seconds if enabled
         if auto_refresh:
             time.sleep(1)
-        if (datetime.now() - st.session_state.last_refresh).seconds >= 30:
-        st.session_state.last_refresh = datetime.now()
-        st.rerun()
+            if (datetime.now() - st.session_state.last_refresh).seconds >= 30:
+                st.session_state.last_refresh = datetime.now()
+                st.rerun()
         
         # Navigation
         col1, col2, col3, col4, col5 = st.columns(5)
