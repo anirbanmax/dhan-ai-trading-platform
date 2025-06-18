@@ -1,18 +1,5 @@
-[global]
-developmentMode = false
-
-[server]
-port = 8501
-enableCORS = false
-enableXsrfProtection = true
-maxUploadSize = 200
-
-[browser]
-gatherUsageStats = false
-
 [theme]
 primaryColor = "#1E3A8A"
 backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#F8FAFC"
 textColor = "#1F2937"
-font = "sans serif"
