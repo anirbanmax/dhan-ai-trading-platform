@@ -1,37 +1,5 @@
-# Core Framework
-streamlit>=1.28.0
-pandas>=2.0.0
-numpy>=1.24.0
-
-# Data Visualization
-plotly>=5.15.0
-
-# Machine Learning & AI
-scikit-learn>=1.3.0
-xgboost>=1.7.0
-tensorflow>=2.13.0
-joblib>=1.3.0
-
-# Technical Analysis (Alternative to TA-Lib)
-pandas-ta>=0.3.14b
-yfinance>=0.2.18
-
-# Financial Data & APIs
-requests>=2.31.0
-beautifulsoup4>=4.12.0
-feedparser>=6.0.10
-
-# Text Processing & NLP
-textblob>=0.17.1
-
-# Statistical Analysis
-scipy>=1.11.0
-
-# Utilities & Tools
-python-dateutil>=2.8.2
-pytz>=2023.3
-
-# Web Scraping & API
-urllib3>=2.0.4
-lxml>=4.9.3
-openpyxl>=3.1.2
+streamlit
+pandas
+numpy
+plotly
+requests
