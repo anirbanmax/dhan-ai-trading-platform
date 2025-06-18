@@ -1,105 +1,18 @@
 [global]
-# Development mode settings
 developmentMode = false
-showWarningOnDirectExecution = false
-
-[logger]
-# Logging configuration
-level = "info"
-messageFormat = "%(asctime)s %(message)s"
-
-[client]
-# Client-side settings
-caching = true
-displayEnabled = true
-showErrorDetails = true
-toolbarMode = "auto"
-
-[runner]
-# Runner configuration
-magicEnabled = true
-installTracer = false
-fixMatplotlib = true
-postScriptGC = true
-fastReruns = true
-enforceSerializableSessionState = false
 
 [server]
-# Server configuration
-runOnSave = false
-allowRunOnSave = false
 port = 8501
-baseUrlPath = ""
 enableCORS = false
 enableXsrfProtection = true
 maxUploadSize = 200
-maxMessageSize = 200
-enableWebsocketCompression = false
-enableStaticServing = true
-headless = false
-
-# Session configuration
-maxRuntime = 3600
-scriptHealthCheckEnabled = true
-sessionStateWatchdogEnabled = true
 
 [browser]
-# Browser settings
 gatherUsageStats = false
-serverAddress = "localhost"
-serverPort = 8501
 
 [theme]
-# Professional mobile-first theme
 primaryColor = "#1E3A8A"
 backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#F8FAFC"
 textColor = "#1F2937"
 font = "sans serif"
-
-[deprecation]
-# Deprecation warnings
-showPyplotGlobalUse = false
-showfileUploaderEncoding = false
-
-[mapbox]
-# Mapbox configuration (if needed)
-token = ""
-
-[s3]
-# AWS S3 configuration (if needed for file storage)
-region = ""
-bucket = ""
-accessKeyId = ""
-secretAccessKey = ""
-
-# Custom configuration for trading platform
-[trading]
-# Default risk management settings
-default_stop_loss = 0.05
-max_position_size = 0.10
-max_portfolio_risk = 0.15
-min_confidence_threshold = 0.70
-
-# Data refresh intervals (in seconds)
-market_data_refresh = 5
-news_refresh = 60
-signals_refresh = 300
-
-# Chart settings
-default_chart_height = 400
-default_timeframe = "1D"
-max_chart_points = 1000
-
-# Mobile optimization
-mobile_breakpoint = 768
-touch_target_size = 44
-mobile_font_scale = 1.0
-
-[caching]
-# Caching configuration
-enableDiskCache = true
-diskCacheSize = 1000
-enableMemoryCache = true
-memoryCacheSize = 500
-suppressCachedStWidgetWarning = true
